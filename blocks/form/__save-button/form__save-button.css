@@ -1,0 +1,22 @@
+.form__save-button {
+    margin: 0 auto;
+    margin-top: 48px;
+    margin-bottom: 37px;
+    margin-left: 36px;
+    margin-right:36px;
+    width: 358px;
+    min-height: 50px;
+    background-color: black;
+    border-radius: 2px;
+}
+
+
+@media screen and (max-width:320px) {
+    .form__save-button {
+        max-width: 238px;
+        margin-left:22px;
+        margin-right:22px;
+        margin-bottom:25px;
+        margin-top:45px;
+    }
+}

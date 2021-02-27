@@ -1,0 +1,12 @@
+.form__pic {
+    position: absolute;
+    top: -50px;
+    right: -50px;
+}
+
+@media screen and (max-width:320px) {
+    .form__pic {
+        right: -13px;
+        top: -60px;
+    }
+}

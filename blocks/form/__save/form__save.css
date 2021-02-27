@@ -1,0 +1,19 @@
+.form__save {
+    color: white;
+    font-weight: normal;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 14px;
+    padding-bottom: 18px;
+    font-family: Inter, Arial, sans-serif;
+}
+
+@media screen and (max-width:320px) {
+    .form__save {
+        font-size: 14px;
+        line-height: 17px;
+    }
+}

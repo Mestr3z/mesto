@@ -1,0 +1,21 @@
+.profile__plus {
+    max-width: 22px;
+    max-height: 22px;
+    margin: 0;
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+@media screen and (max-width:320px){
+    .profile__plus{
+        margin:0;
+        padding-right:132px;
+        padding-left:132px;
+        padding-top:17px;
+        padding-bottom:17px;
+        max-width:16px;
+        
+    }
+}

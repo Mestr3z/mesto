@@ -1,0 +1,8 @@
+.profile__name-container{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+

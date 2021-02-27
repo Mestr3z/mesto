@@ -1,0 +1,15 @@
+.form__content{
+    position:relative;
+    background-color: white;
+    color:black;
+    max-width:430px;
+    min-height: 330px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:320px){
+    .form__content{
+        max-width: 282px;
+        min-height: 322px;
+    }
+}
