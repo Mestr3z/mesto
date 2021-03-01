@@ -5,6 +5,8 @@
     max-width:430px;
     min-height: 330px;
     border-radius: 10px;
+    margin:0 auto;
+    margin-top:195px;
 }
 
 @media screen and (max-width:320px){

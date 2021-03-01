@@ -12,90 +12,85 @@
     <div class='page'>
         <header class='header'>
             <img class='header__logo' src="images/logo.svg" alt='лого'>
-            <hr class='header__line'>
         </header>
         <main class='content'>
             <section class='profile'>
                 <img class='profile__avatar' src='./images/image.jpg' alt='аватар'>
                 <div class='profile__info'>
                     <div class='profile__name-container'>
-                    <p class='profile__name'>Жак-Ив Кусто</p>
-                    <img class='profile__edit-button link' src="./images/Edit Button.svg" alt='кнопка'>
+                    <h1 class='profile__name'>Жак-Ив Кусто</h1>
+                    <button class='profile__button' type='submit'>
+                        <img class='profile__button_pic link' src="./images/EditButton.svg" alt='кнопка'>
+                    </button>
                     </div>
                     <p class='profile__status'>Исследователь океана</p>
-                </div>
-                
-                <div class='profile__add-button link'>
+                    </div>
+                <button type='submit' class='profile__add-button link'>
                     <img class='profile__plus' src='./images/Vector.svg' alt='кнопка'>
-                </div>
+                </button>
             </section>
             <section class='cards'>
                 <div class='cards__content'>
                 <img class='cards__grid' src='./images/karachaevsk.jpg' alt='карачаевск'>
                 <div class='cards__description'>
                     <h3 class='cards__name'>Карачаевск</h3>
-                    <div class='cards__like link'></div>
+                    <button class='cards__like link'></button>
                 </div>
                 </div>
                 <div class='cards__content'>
                 <img class='cards__grid' src='./images/elbrus.jpg' alt='эльбрус'>
                 <div class='cards__description'>
                     <h3 class='cards__name'>Гора Эльбрус</h3>
-                    <div class='cards__like link'></div>
+                    <button class='cards__like link'></button>
                 </div>
                 </div>
                 <div class='cards__content'>
                 <img class='cards__grid' src='./images/dombai.jpg' alt='Домбай'>
                 <div class='cards__description'>
                     <h3 class='cards__name'>Домбай</h3>
-                    <div class='cards__like link'></div>
+                    <button class='cards__like link'></button>
                 </div>
                 </div>
                 <div class='cards__content'>
                 <img class='cards__grid' src='./images/elbrus.jpg' alt='эльбрус'>
                 <div class='cards__description'>
                     <h3 class='cards__name'>Гора Эльбрус</h3>
-                    <div class='cards__like link'></div>
+                    <button class='cards__like link'></button>
                 </div>
                 </div>
                 <div class='cards__content'>
                 <img class='cards__grid' src='./images/dombai.jpg' alt='домбай'>
                 <div class='cards__description'>
                     <h3 class='cards__name'>Домбай</h3>
-                    <div class='cards__like link'></div>
+                    <button class='cards__like link'></button>
                 </div>
                 </div>
                 <div class='cards__content'>
                 <img class='cards__grid' src='./images/karachaevsk.jpg' alt='карачаевск'>
                 <div class='cards__description'>
                     <h3 class='cards__name'>Карачаево-Черкесия</h3>
-                    <div class='cards__like link'></div>
+                    <button class='cards__like link'></button>
                 </div>
                 </div>
             </section>
         </main>
-    </div>
     <section class='form'>
-         <div class='form__body'>
              <div class='form__content'>
-                <img class='form__pic link'src='images/Close Icon.svg' alt='кнопка'>
+                <button class='form__button' type='submit'>
+                    <img class='link' src='images/CloseIcon.svg' alt='кнопка'>
+                </button>
                  <h3 class='form__title'>Редактировать профиль</h3>
-                 <form class='form__list' action='#' method="POST">
-                 <input name='name'type='text' class='form__name' value='Жак-Ив Кусто'>
-                    <hr class='form__line'>
-                 <input name='job' type='text' value='Исследователь океана' class='form__lastname'>
-                    <hr class='form__line'>
-                    <button type='submit' class='form__save-button link'>
-                        <p class='form__save'>Сохранить</p>
-                    </button>
+                 <form name='text' class='form__list' action='#' method="POST">
+                 <input name='name' type='text' class='form__info form__info_name'>
+                 <input name='job' type='text' class='form__info form__info_job'>
+                    <button type='submit' class='form__save-button'>Сохранить</button>
                 </form>
-                 
              </div>
-         </div>
     </section>
+    <footer class=footer>
+        <p class=footer__text>© 2020 Mesto Russia</p>
+    </footer>
+    </div>
+    <script src="./index.js"></script>
 </body>
-<footer class=footer>
-    <p class=footer__text>© 2020 Mesto Russia</p>
-</footer>
-<script src="./index.js"></script>
 </html>

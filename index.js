@@ -1,16 +1,18 @@
 const popupEdit = document.querySelector(".form");
-const buttonEdit = document.querySelector(".profile__edit-button");
-const popupCloseButton = document.querySelector(".form__pic");
+const buttonEdit = document.querySelector(".profile__button");
+const popupCloseButton = document.querySelector(".form__button");
 const buttonLike = document.querySelector('.cards__like');
 const formEdit = document.querySelector('.form__list');
 const jobInput = document.querySelector('input[name="job"]');
-const nameInput = document.querySelector('input[name="name"]');
-const userName = document.querySelector('.profile__name');
-const userJob = document.querySelector('.profile__status');
-const saveButtun = document.querySelector('.form__save-button');
+let nameInput = document.querySelector('input[name="name"]');
+let userName = document.querySelector('.profile__name');
+let userJob = document.querySelector('.profile__status');
+let saveButtun = document.querySelector('.form__save-button');
 
 const popupEditOpen = () => {
     popupEdit.classList.add('form__active');
+    jobInput.value = userJob.textContent;
+    nameInput.value = userName.textContent;
 };
 
 const popupEditClose = () => {
@@ -23,6 +25,7 @@ const formEditSubmitHandler = (evt) => {
     const nameValue = nameInput.value;
     userName.textContent = nameValue;
     userJob.textContent = jobValue;
+
     popupEditClose();
 }
 

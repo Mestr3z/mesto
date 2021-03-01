@@ -3,20 +3,32 @@
     margin-top: 48px;
     margin-bottom: 37px;
     margin-left: 36px;
-    margin-right:36px;
+    margin-right: 36px;
     width: 358px;
     min-height: 50px;
     background-color: black;
+    color: white;
+    border: none;
     border-radius: 2px;
+    font-family: Inter, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
 }
-
-
 @media screen and (max-width:320px) {
     .form__save-button {
         max-width: 238px;
-        margin-left:22px;
-        margin-right:22px;
-        margin-bottom:25px;
-        margin-top:45px;
+        margin-left: 22px;
+        margin-right: 22px;
+        margin-bottom: 25px;
+        margin-top: 45px;
+        font-size: 14px;
+        line-height: 17px;
     }
+}
+
+.form__save-button:hover{
+    opacity: 0.8;
+    transition: opacity 1.5s linear 0.3;
+    cursor: pointer;
 }

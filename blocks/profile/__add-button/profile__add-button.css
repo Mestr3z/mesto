@@ -8,8 +8,16 @@
     border: 2px solid #FFFFFF;
     box-sizing: border-box;
     border-radius: 2px;
+    text-decoration: none;
+    background-color: transparent;
+    padding:0;
 }
-
+@media screen and (max-width:640px){
+    .profile__add-button{
+        margin:0 auto;
+        margin-top:36px;
+    }
+}
 @media screen and (max-width:320px){
     .profile__add-button{
         margin: 0;

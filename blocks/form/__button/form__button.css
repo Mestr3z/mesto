@@ -1,0 +1,17 @@
+.form__button {
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    text-decoration: none;
+    background-color: transparent;
+    padding: 0;
+    border: none;
+}
+
+@media screen and (max-width:320px) {
+    .form__pic {
+        right: -2px;
+        top: -33px;
+        max-width: 26px;
+    }
+}

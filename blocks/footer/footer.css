@@ -1,31 +1,38 @@
 .footer {
-    margin: 0 auto;
+    margin:0 auto;
     margin-top: 67px;
-    margin-left: 200px;
-    max-width: 328px;
 }
-
+@media screen and (max-width:2560px){
+    .footer{
+        margin-left:840px;
+        margin-right:840px;
+    }
+}
 @media screen and (max-width:1440px) {
     .footer {
         margin-left: 280px;
+        margin-right:280px;
     }
 }
 
 @media screen and (max-width:1280px){
     .footer{
         margin-left:200px;
+        margin-right:200px;
     }
 }
 
 @media screen and (max-width:1024px){
     .footer{
         margin-left:75px;
+        margin-right:75px;
     }
 }
 
 @media screen and (max-width:768px) {
     .footer {
-        margin-left: 94px;
+        margin-left: 86.5px;
+        margin-right:86.5px;
     }
 }
 
