@@ -1,5 +1,5 @@
 .form__info {
-    min-width: 358px;
+    width:358px;
     height: 14px;
     margin: 0;
     margin-left: 36px;
@@ -13,4 +13,16 @@
     border: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 
+}
+@media screen and (max-width:400px){
+.form__info{
+    width:250px;
+}
+}
+@media screen and (max-width:320px){
+    .form__info{
+        width:238px;
+        margin-right:22px;
+        margin-left:22px;
+    }
 }

@@ -16,6 +16,7 @@
 @import url(../blocks/form/__info/form__info.css);
 @import url(../blocks/form/__list/form__list.css);
 @import url(../blocks/form/__button/form__button.css);
+@import url(../blocks/form/__button/_pic/form__button_pic.css);
 @import url(../blocks/form/__save-button/form__save-button.css);
 @import url(../blocks/form/__save/form__save.css);
 @import url(../blocks/form/__title/form__title.css);
@@ -32,12 +33,6 @@
 @import url(../blocks/profile/__plus/profile__plus.css);
 @import url(../blocks/profile/__status/profile__status.css);
 @import url(../blocks/profile/__name-container/profile__name-container.css);
-
-
-
-
-
-
 
 
 
