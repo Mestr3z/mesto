@@ -1,4 +1,4 @@
-.profile__button_pic {
+.profile__button-pic {
     margin: 0;
     max-width: 24px;
     max-height: 24px;
@@ -6,7 +6,7 @@
 }
 
 @media screen and (max-width:320px){
-    .profile__button_pic{
+    .profile__button-pic{
         display: flex;
         flex-direction: row;
         max-width: 18px;
