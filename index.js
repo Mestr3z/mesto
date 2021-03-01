@@ -10,13 +10,13 @@ let userJob = document.querySelector('.profile__status');
 let saveButtun = document.querySelector('.form__save-button');
 
 const popupEditOpen = () => {
-    popupEdit.classList.add('form__active');
+    popupEdit.classList.add('form_active');
     jobInput.value = userJob.textContent;
     nameInput.value = userName.textContent;
 };
 
 const popupEditClose = () => {
-    popupEdit.classList.toggle('form__active');
+    popupEdit.classList.toggle('form_active');
 };
 
 const formEditSubmitHandler = (evt) => {
