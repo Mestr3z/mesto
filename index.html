@@ -9,7 +9,7 @@
 </head>
 
 <body class='body'>
-    <div class='page'>
+    <main class='page'>
         <header class='header'>
             <img class='header__logo' src="images/logo.svg" alt='лого'>
         </header>
@@ -29,68 +29,62 @@
                     <img class='profile__plus' src='./images/Vector.svg' alt='кнопка'>
                 </button>
             </section>
-            <section class='cards'>
+            <div class='cards'>
+                <template id='cards__template'>
                 <div class='cards__content'>
-                <img class='cards__grid' src='./images/karachaevsk.jpg' alt='карачаевск'>
+                    <button class='cards__delete' type='button'>
+                        <img src='./images/Trash.svg' class='cards__delete_img'>
+                    </button>
+                <img class='cards__grid' src='#' alt='картинка'>
                 <div class='cards__description'>
-                    <h3 class='cards__name'>Карачаевск</h3>
+                    <h3 class='cards__name'></h3>
                     <button type='button' class='cards__like link'></button>
                 </div>
                 </div>
-                <div class='cards__content'>
-                <img class='cards__grid' src='./images/elbrus.jpg' alt='эльбрус'>
-                <div class='cards__description'>
-                    <h3 class='cards__name'>Гора Эльбрус</h3>
-                    <button type='button' class='cards__like link'></button>
-                </div>
-                </div>
-                <div class='cards__content'>
-                <img class='cards__grid' src='./images/dombai.jpg' alt='Домбай'>
-                <div class='cards__description'>
-                    <h3 class='cards__name'>Домбай</h3>
-                    <button type='button' class='cards__like link'></button>
-                </div>
-                </div>
-                <div class='cards__content'>
-                <img class='cards__grid' src='./images/elbrus.jpg' alt='эльбрус'>
-                <div class='cards__description'>
-                    <h3 class='cards__name'>Гора Эльбрус</h3>
-                    <button type='button' class='cards__like link'></button>
-                </div>
-                </div>
-                <div class='cards__content'>
-                <img class='cards__grid' src='./images/dombai.jpg' alt='домбай'>
-                <div class='cards__description'>
-                    <h3 class='cards__name'>Домбай</h3>
-                    <button type='button' class='cards__like link'></button>
-                </div>
-                </div>
-                <div class='cards__content'>
-                <img class='cards__grid' src='./images/karachaevsk.jpg' alt='карачаевск'>
-                <div class='cards__description'>
-                    <h3 class='cards__name'>Карачаево-Черкесия</h3>
-                    <button type='button' class='cards__like link'></button>
-                </div>
-                </div>
-            </section>
+            </template>
+        </div>
         </main>
-    <section class='form'>
-             <div class='form__content'>
-                <button class='form__button' type='button'>
-                    <img class='form__button-pic link' src='images/CloseIcon.svg' alt='кнопка'>
+    <section class='popup popup__edit'>
+             <div class='popup__content popup__content_edit'>
+                <button class='popup__close-button popup__close-button_edit' type='button'>
+                    <img class='popup__button-pic link' src='images/CloseIcon.svg' alt='кнопка'>
                 </button>
-                 <h3 class='form__title'>Редактировать профиль</h3>
-                 <form name='text' class='form__list' action='#' method="POST">
-                 <input name='name' type='text' class='form__info'>
-                 <input name='job' type='text' class='form__info'>
-                    <button type='submit' class='form__save-button'>Сохранить</button>
+                 <h3 class='popup__title'>Редактировать профиль</h3>
+                 <form name='text' class='popup__list popup__list_edit' action='#' method="POST">
+                 <input name='name' type='text' class='popup__info popup__info_name'>
+                 <input name='job' type='text' class='popup__info popup__info_job'>
+                    <button type='submit' class='popup__save-button popup__save-button_edit'>Сохранить</button>
                 </form>
              </div>
     </section>
+    <section class='popup popup__add'>
+        <div class='popup__content popup__content_add'>
+           <button class='popup__close-button popup__close-button_add ' type='button'>
+               <img class='popup__button-pic link' src='images/CloseIcon.svg' alt='кнопка'>
+           </button>
+            <h3 class='popup__title'>Новое место</h3>
+            <form name='text' class='popup__list popup__list_add' action='#' method="POST">
+            <input name='cardname' type='text' class='popup__info popup__info_cardname' placeholder="Название">
+            <input name='piclink' type='url' class='popup__info popup__info_piclink' placeholder="Ссылка на картинку">
+               <button type='submit' class='popup__save-button popup__save-button_add'>Сохранить</button>
+           </form>
+        </div>
+</section>
+<section class= 'popup popup__image'>
+    <div class='popup__content_image'>
+        <img src='#' alt='картинка' class='popup__pic'>
+    <button class='popup__close-button_image' type='button'>
+        <img class='popup__button-pic link' src='images/CloseIcon.svg' alt='кнопка'>
+    </button>
+    <h3 class='popup__description_image'></h3>
+</div>
+</section>
+
     <footer class=footer>
         <p class=footer__text>© 2020 Mesto Russia</p>
     </footer>
-    </div>
-    <script src="./index.js"></script>
+</main>
+<script src='./scripts/initialCards.js'></script>
+<script src='./scripts/index.js'></script>
 </body>
 </html>

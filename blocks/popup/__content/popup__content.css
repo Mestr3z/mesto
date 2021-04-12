@@ -1,4 +1,4 @@
-.form__content{
+.popup__content{
     position:relative;
     background-color: white;
     color:black;
@@ -10,7 +10,7 @@
 }
 
 @media screen and (max-width:320px){
-    .form__content{
+    .popup__content{
         max-width: 282px;
         min-height: 322px;
     }

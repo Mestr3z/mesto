@@ -1,4 +1,4 @@
-.form__button {
+.popup__close-button {
     position: absolute;
     top: -50px;
     right: -50px;
@@ -8,14 +8,14 @@
     background-color: rgba(0,0,0,0);
 }
 @media screen and (max-width:515px){
-.form__button{
+.popup__close-button{
     right: -2px;
     top: -33px;
 }
 
 }
 @media screen and (max-width:320px) {
-    .form__button {
+    .popup__close-button {
         right: -2px;
         top: -33px;
         max-width: 26px;
