@@ -7,10 +7,9 @@
     top:0;
     left:0;
     min-height: 100%;
-    transition: opacity 1s linear;
     opacity: 0;
     visibility: hidden;
-    height: 0;
+    transition: visibility 1s, opacity 1s linear;
     overflow: hidden;
     align-items: center;
     justify-content: center;

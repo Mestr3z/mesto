@@ -4,3 +4,10 @@
         height: 299px;
     }
 }
+
+@media screen and (max-width:768px) {
+    .popup__pic {
+        width: 576px;
+        height: 556px;
+    }
+}
