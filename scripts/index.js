@@ -1,9 +1,9 @@
-const popupEdit = document.querySelector(".popup__edit");
+const popupEdit = document.querySelector(".popup_edit");
 const buttonEdit = document.querySelector(".profile__button");
 const popupCloseButtonEdit = document.querySelector(".popup__close-button_edit");
 const popupCloseButtonAdd = document.querySelector(".popup__close-button_add");
-const popupCloseButtonImg = document.querySelector(".popup__close-button_image");
-const popupImgDescription = document.querySelector('.popup__description_image');
+const popupCloseButtonImg = document.querySelector(".popup__close-button-image");
+const popupImgDescription = document.querySelector('.popup__description-image');
 const buttonLike = document.querySelector('.cards__like');
 const formEdit = document.querySelector('.popup__list_edit');
 const formAdd = document.querySelector('.popup__list_add')
@@ -15,11 +15,11 @@ let userName = document.querySelector('.profile__name');
 let userJob = document.querySelector('.profile__status');
 let saveButtun = document.querySelector('.popup__save-button_edit');
 let addButton = document.querySelector('.popup__save-button_add')
-const popupAdd = document.querySelector('.popup__add');
+const popupAdd = document.querySelector('.popup_add');
 const buttonAdd = document.querySelector('.profile__add-button');
 const card = document.querySelector('#cards__template').content.querySelector('.cards__content');
 const cards = document.querySelector('.cards');
-const popupImage = document.querySelector('.popup__image');
+const popupImage = document.querySelector('.popup_image');
 const popupPic = document.querySelector('.popup__pic');
 const toggleLike = (evt) => {
     if (evt.target.classList.contains('cards__like')) {
