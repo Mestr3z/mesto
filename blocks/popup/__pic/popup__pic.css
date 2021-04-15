@@ -1,13 +1,14 @@
-@media screen and (max-width:320px) {
-    .popup__pic {
-        width: 240px;
-        height: 299px;
-    }
-}
 
 @media screen and (max-width:768px) {
     .popup__pic {
         width: 576px;
         height: 556px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .popup__pic {
+        width: 240px;
+        height: 299px;
     }
 }
