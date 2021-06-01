@@ -50,7 +50,6 @@ function openPopup(popup){
 }
 
 const toggleLike = (evt) => {
-    
         evt.target.classList.toggle('cards__like_active')
 };
 
