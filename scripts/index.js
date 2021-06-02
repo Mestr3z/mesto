@@ -35,7 +35,7 @@ function addCard(event) {
     addCards.link = picAddInput.value;
     cards.prepend(createCard(addCards));
     formAdd.reset();
-    popupAddClose();
+    closePopup(popupAdd);
 }
 
 
@@ -61,7 +61,7 @@ function createCard(element){
     cardPic.alt = element.name;
     const cardLike = newCard.querySelector('.cards__like');
     cardLike.addEventListener('click', toggleLike);
-    newCard.addEventListener('click', deleteCards);
+    newCard.querySelector('.cards__delete').addEventListener('click', deleteCards);
     cardPic.addEventListener('click', openImagePopup);
     return newCard;
 
@@ -75,9 +75,7 @@ popupPic.alt = "Фото " + event.target.alt
     openPopup(popupImage);
 }
 
-function closePopupImg(){
-    closePopup(popupImage);
-}
+
 
 
 initialCards.forEach((item) => {
@@ -93,14 +91,9 @@ const popupEditOpen = () => {
     nameInput.value = userName.textContent;
 };
 
-const popupEditClose = () => {
-    closePopup(popupEdit);
-};
 
 
-const popupAddClose = () => {
-    closePopup(popupAdd);
-};
+
 
 
 const formEditSubmitHandler = (evt) => {
@@ -114,12 +107,7 @@ const formEditSubmitHandler = (evt) => {
 }
 
 function deleteCards(event) {
-    const item = event.currentTarget;
-    if(event.target.classList.contains('cards__delete')){
-        item.removeEventListener('click', toggleLike);
-        item.removeEventListener('click', deleteCards);
-    item.remove()
-    }
+    event.target.closest('.cards__content').remove()
 }
 
 
@@ -127,8 +115,8 @@ function deleteCards(event) {
 
 formAdd.addEventListener('submit', addCard);
 buttonEdit.addEventListener('click', popupEditOpen);
-popupCloseButtonEdit.addEventListener('click', popupEditClose);
-popupCloseButtonAdd.addEventListener('click', popupAddClose);
+popupCloseButtonEdit.addEventListener('click', () => closePopup(popupEdit)); 
+popupCloseButtonAdd.addEventListener('click', () => closePopup(popupAdd));
 formEdit.addEventListener('submit', formEditSubmitHandler);
 buttonAdd.addEventListener('click', popupAddOpen);
-popupCloseButtonImg.addEventListener('click', closePopupImg);
+popupCloseButtonImg.addEventListener('click', () => closePopup(popupImage));
