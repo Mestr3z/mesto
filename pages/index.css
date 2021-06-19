@@ -36,10 +36,12 @@
 @import url(../blocks/popup/__save/popup__save.css);
 @import url(../blocks/popup/__title/popup__title.css);
 @import url(../blocks/popup/_active/popup_active.css);
+@import url(../blocks/popup/__input-error/popup__input-error.css);
+@import url(../blocks/popup/__input-error/_active/popup__input-error_active.css);
 @import url(../blocks/popup/__content-image/popup__content_image.css);
 @import url(../blocks/popup/__discription-image/popup__description-image.css);
 @import url(../blocks/popup/__close-button-image/popup__close-button-image.css);
-
+@import url(../blocks/popup/__info/_error/popup__info_error.css);
 
 
 

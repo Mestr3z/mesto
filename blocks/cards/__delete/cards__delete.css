@@ -1,5 +1,6 @@
 .cards__delete{
     background: url(../../../images/trast1.svg);
+    background-repeat: no-repeat;
     position: absolute;
     border: none;
     background-color: transparent;

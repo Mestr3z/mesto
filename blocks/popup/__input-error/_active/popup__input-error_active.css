@@ -1,0 +1,18 @@
+.popup__input-error_active {
+    display:block;
+    position: relative;
+    margin-left:36px;
+    margin-top:5px;
+    margin-bottom:13px;
+    max-width: 368px;
+    font-family: Inter,Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FF0000;
+}
+
+.popup__input-error_active:last-of-type{
+    margin-bottom: 0px;
+} 
