@@ -53,21 +53,24 @@ function addCard(event) {
   cards.prepend(createCard(addCards));
   formAdd.reset();
   closePopup(popupAdd);
+  
+  controlButton(addButton, [cardNameInput, picAddInput]);
+
 }
 
 function closePopup(popup) {
-  popup.classList.toggle("popup_active");
+  popup.classList.remove("popup_active");
   document.removeEventListener('keydown', popupEscClose);
   popup.removeEventListener('mousedown', popupOverlayClose);
 }
 
 function openPopup(popup) {
-  popup.classList.toggle("popup_active");
+  popup.classList.add("popup_active");
   document.addEventListener('keydown', popupEscClose);
   popup.addEventListener('mousedown', popupOverlayClose);
 }
 
-const toggleLike = (evt) => {
+const handleLikeClick = (evt) => {
   evt.target.classList.toggle("cards__like_active");
 };
 
@@ -78,10 +81,10 @@ function createCard(element) {
   cardPic.src = element.link;
   cardPic.alt = element.name;
   const cardLike = newCard.querySelector(".cards__like");
-  cardLike.addEventListener("click", toggleLike);
+  cardLike.addEventListener("click", handleLikeClick );
   newCard
     .querySelector(".cards__delete")
-    .addEventListener("click", deleteCards);
+    .addEventListener("click", deleteCard);
   cardPic.addEventListener("click", openImagePopup);
   return newCard;
 }
@@ -98,7 +101,7 @@ initialCards.forEach((item) => {
   cards.append(newCard);
 });
 
-const popupEditOpen = () => {
+const openEditPopup = () => {
   openPopup(popupEdit);
   jobInput.value = userJob.textContent;
   nameInput.value = userName.textContent;
@@ -113,10 +116,10 @@ const formEditSubmitHandler = (evt) => {
   userName.textContent = nameValue;
   userJob.textContent = jobValue;
 
-  popupEditClose();
+  closePopup(popupEdit);
 };
 
-function deleteCards(event) {
+function deleteCard(event) {
   event.target.closest(".cards__content").remove();
 }
 
@@ -130,7 +133,7 @@ const popupEscClose = (evt) => {
 const popupOverlayClose = (evt) => {
     if(evt.target === evt.currentTarget) {
         const popupOverlay = document.querySelector('.popup_active');
-        closePopup(popupOverlay);
+        closePopup(popupOverlay, evt.target);
     }
 }
 
@@ -140,7 +143,7 @@ const updateInputValue = (inputElement, value) => {
     };
 
 formAdd.addEventListener("submit", addCard);
-buttonEdit.addEventListener("click", popupEditOpen);
+buttonEdit.addEventListener("click", openEditPopup);
 popupCloseButtonEdit.addEventListener("click", () => closePopup(popupEdit));
 popupCloseButtonAdd.addEventListener("click", () => closePopup(popupAdd));
 formEdit.addEventListener("submit", formEditSubmitHandler);

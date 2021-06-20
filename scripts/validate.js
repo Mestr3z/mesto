@@ -3,7 +3,6 @@ const showInputError = (formElement, inputElement) => {
   const error = formElement.querySelector(`#${inputElement.id}-error`);
   inputElement.classList.add(inputError);
   error.textContent = inputElement.validationMessage;
-  console.log(error.textContent);
   error.classList.add(inputErrorActive);
 };
 
