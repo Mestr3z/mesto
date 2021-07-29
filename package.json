@@ -1,0 +1,22 @@
+{
+  "name": "mesto",
+  "version": "0.0.1",
+  "description": "### О проекте  Проект \"Место\" - интерактивная страница, куда можно добавлять фотографии, удалять их и ставить лайки.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mestr3z/mesto.git"
+  },
+  "keywords": [
+    "Vladislav"
+  ],
+  "author": "Vladislav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mestr3z/mesto/issues"
+  },
+  "homepage": "https://github.com/Mestr3z/mesto#readme"
+}

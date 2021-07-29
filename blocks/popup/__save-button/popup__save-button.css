@@ -40,8 +40,3 @@
     cursor: pointer;
 }
 
-.popup__save-button:disabled {
-    background-color: #F7F7F7;
-    color: rgba(0, 0, 0, .2);
-    border: 1px solid rgba(0, 0, 0, .2);
-}
