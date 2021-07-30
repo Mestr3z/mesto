@@ -15,18 +15,10 @@ const formEdit = document.querySelector(".popup__list_edit");
 const formAdd = document.querySelector(".popup__list_add");
 const jobInput = document.querySelector('input[name="job"]');
 const nameInput = document.querySelector('input[name="name"]');
-const cardNameInput = document.querySelector('input[name="cardname"]');
-const picAddInput = document.querySelector('input[name="piclink"]');
 const userName = document.querySelector(".profile__name");
 const userJob = document.querySelector(".profile__status");
-const saveButtun = document.querySelector(".popup__save-button_edit");
-const addButton = document.querySelector(".popup__save-button_add");
 const popupAdd = document.querySelector(".popup_add");
 const buttonAdd = document.querySelector(".profile__add-button");
-const card = document
-  .querySelector("#cards__template")
-  .content.querySelector(".cards__content");
-const cards = document.querySelector(".cards");
 export const popupImage = document.querySelector(".popup_image");
 export const popupPic = document.querySelector(".popup__pic");
 const formAddCard = popupAdd.querySelector('.popup__list_add')
@@ -50,10 +42,6 @@ function popupAddOpen() {
 const editProfileFormValidator = new FormValidator(config, formEditProfile);
 editProfileFormValidator.enableValidation();
 
-function popupEditClose() {
-  popupEdit.classList.remove("popup_active");
-}
-
 
 function closePopup(popup) {
   popup.classList.remove("popup_active");
@@ -66,10 +54,6 @@ export function openPopup(popup) {
   document.addEventListener('keydown', popupEscClose);
   popup.addEventListener('mousedown', popupOverlayClose);
 }
-
-const handleLikeClick = (evt) => {
-  evt.target.classList.toggle("cards__like_active");
-};
 
 const addCard = (item) => {
   const card = new Card('#cards__template', item.name, item.link);
@@ -101,9 +85,6 @@ const formEditSubmitHandler = (evt) => {
   closePopup(popupEdit);
 };
 
-function deleteCard(event) {
-  event.target.closest(".cards__content").remove();
-}
 
 const popupEscClose = (evt) => {
     if(evt.key === 'Escape') {
@@ -132,5 +113,3 @@ popupCloseButtonAdd.addEventListener("click", () => closePopup(popupAdd));
 formEdit.addEventListener("submit", formEditSubmitHandler);
 buttonAdd.addEventListener("click", popupAddOpen);
 popupCloseButtonImg.addEventListener("click", () => closePopup(popupImage));
-
-
