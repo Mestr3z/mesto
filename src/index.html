@@ -4,29 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="pages/index.css">
     <title>Mesto</title>
 </head>
 
 <body class='body'>
     <main class='page'>
         <header class='header'>
-            <img class='header__logo' src="images/logo.svg" alt='лого'>
+            <img class='header__logo' src="<%=require('./images/logo.svg')%>" alt='лого'>
         </header>
         <main class='content'>
             <section class='profile'>
-                <img class='profile__avatar' src='./images/image.jpg' alt='аватар'>
+                <img class='profile__avatar' src="<%=require('./images/image.jpg')%>" alt='аватар'>
                 <div class='profile__info'>
                     <div class='profile__name-container'>
                         <h1 class='profile__name'>Жак-Ив Кусто</h1>
                         <button class='profile__button' type='button'>
-                            <img class='profile__button-pic link' src="./images/EditButton.svg" alt='кнопка'>
+                            <img class='profile__button-pic link' src="<%=require('./images/EditButton.svg')%>" alt='кнопка'>
                         </button>
                     </div>
                     <p class='profile__status'>Исследователь океана</p>
                     </div>
                 <button type='button' class='profile__add-button link'>
-                    <img class='profile__plus' src='./images/Vector.svg' alt='кнопка'>
+                    <img class='profile__plus' src="<%=require('./images/Vector.svg')%>" alt='кнопка'>
                 </button>
             </section>
             <div class='cards'>
@@ -46,7 +45,7 @@
     <section class='popup popup_edit'>
              <div class='popup__content popup__content_edit'>
                 <button class='popup__close-button popup__close-button_edit' type='button'>
-                    <img class='popup__button-pic link' src='images/CloseIcon.svg' alt='кнопка'>
+                    <img class='popup__button-pic link' src="<%=require('./images/CloseIcon.svg')%>" alt='кнопка'>
                 </button>
                  <h3 class='popup__title'>Редактировать профиль</h3>
                  <form name='text' class='popup__list popup__list_edit' action='#' method="POST" novalidate>
@@ -61,7 +60,7 @@
     <section class='popup popup_add'>
         <div class='popup__content popup__content_add'>
            <button class='popup__close-button popup__close-button_add ' type='button'>
-               <img class='popup__button-pic link' src='images/CloseIcon.svg' alt='кнопка'>
+               <img class='popup__button-pic link' src="<%=require('./images/CloseIcon.svg')%>" alt='кнопка'>
            </button>
             <h3 class='popup__title'>Новое место</h3>
             <form name='text' class='popup__list popup__list_add' action='#' method="POST" novalidate>
@@ -76,8 +75,8 @@
 <section class= 'popup popup_image'>
     <div class='popup__content-image'>
         <img src='#' alt='картинка' class='popup__pic'>
-    <button class='popup__close-button-image' type='button'>
-        <img class='popup__button-pic link' src='images/CloseIcon.svg' alt='кнопка'>
+    <button class='popup__close-button-image popup__close-button' type='button'>
+        <img class='popup__button-pic link' src="<%=require('./images/CloseIcon.svg')%>" alt='кнопка'>
     </button>
     <h3 class='popup__description-image'></h3>
 </div>
