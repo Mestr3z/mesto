@@ -49,7 +49,7 @@
                 </button>
                  <h3 class='popup__title'>Редактировать профиль</h3>
                  <form name='text' class='popup__list popup__list_edit' action='#' method="POST" novalidate>
-                 <input name='name' type='text' id='name' class='popup__info popup__info_name' placeholder="Имя" minlength="2" maxlength="40" required>
+                 <input name='profilename' type='text' id='name' class='popup__info popup__info_name' placeholder="Имя" minlength="2" maxlength="40" required>
                  <span class='popup__input-error' id='name-error'></span>
                  <input name='job' type='text' id='discription' class='popup__info popup__info_job'  placeholder="Профессия" minlength="2" maxlength="200" required>
                  <span class='popup__input-error' id='discription-error'></span>
@@ -64,9 +64,9 @@
            </button>
             <h3 class='popup__title'>Новое место</h3>
             <form name='text' class='popup__list popup__list_add' action='#' method="POST" novalidate>
-            <input name='cardname' type='text' id='title' class='popup__info popup__info_cardname' placeholder="Название" minlength="2" maxlength="30" required>
+            <input name='name' type='text' id='title' class='popup__info popup__info_cardname' placeholder="Название" minlength="2" maxlength="30" required>
             <span class='popup__input-error' id='title-error'></span>
-            <input name='piclink' type='url' id='url' class='popup__info popup__info_piclink' placeholder="Ссылка на картинку" required>
+            <input name='link' type='url' id='url' class='popup__info popup__info_piclink' placeholder="Ссылка на картинку" required>
             <span class='popup__input-error' id='url-error'></span>
                <button type='submit' class='popup__save-button popup__save-button_add'>Сохранить</button>
            </form>
@@ -86,6 +86,5 @@
         <p class=footer__text>© 2020 Mesto Russia</p>
     </footer>
 </main>
-<script type='module' src='./scripts/index.js'></script>
 </body>
 </html>

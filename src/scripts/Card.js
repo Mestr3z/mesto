@@ -20,6 +20,7 @@ export default class Card {
     this._setEventListeners();
     return this._cardElement;
   }
+
   _cardLike() {
     this._cardElement
       .querySelector(".cards__like")

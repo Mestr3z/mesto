@@ -14,7 +14,7 @@ export const popupImgDescription = document.querySelector(
 );
 
 const jobInput = document.querySelector('input[name="job"]');
-const nameInput = document.querySelector('input[name="name"]');
+const nameInput = document.querySelector('input[name="profilename"]');
 const userName = ".profile__name";
 const userJob = ".profile__status";
 const popupAdd = document.querySelector(".popup_add");
