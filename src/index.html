@@ -14,7 +14,10 @@
         </header>
         <main class='content'>
             <section class='profile'>
+                <div class = 'profile__avatar-container'>
                 <img class='profile__avatar' src="<%=require('./images/image.jpg')%>" alt='аватар'>
+                    <button class = 'profile__button-avatar' type ="button"></button>
+            </div>
                 <div class='profile__info'>
                     <div class='profile__name-container'>
                         <h1 class='profile__name'>Жак-Ив Кусто</h1>
@@ -36,7 +39,10 @@
                 <img class='cards__grid' src='#' alt='картинка'>
                 <div class='cards__description'>
                     <h3 class='cards__name'></h3>
+                    <div class = 'cards__like-container'>
                     <button type='button' class='cards__like link'></button>
+                    <span class = 'cards__likes'>0</span>
+                    </div>
                 </div>
                 </div>
             </template>
@@ -51,8 +57,8 @@
                  <form name='text' class='popup__list popup__list_edit' action='#' method="POST" novalidate>
                  <input name='profilename' type='text' id='name' class='popup__info popup__info_name' placeholder="Имя" minlength="2" maxlength="40" required>
                  <span class='popup__input-error' id='name-error'></span>
-                 <input name='job' type='text' id='discription' class='popup__info popup__info_job'  placeholder="Профессия" minlength="2" maxlength="200" required>
-                 <span class='popup__input-error' id='discription-error'></span>
+                 <input name='job' type='text' id='description' class='popup__info popup__info_job'  placeholder="Профессия" minlength="2" maxlength="200" required>
+                 <span class='popup__input-error' id='description-error'></span>
                     <button type='submit' class='popup__save-button popup__save-button_edit'>Сохранить</button>
                 </form>
              </div>
@@ -80,6 +86,30 @@
     </button>
     <h3 class='popup__description-image'></h3>
 </div>
+</section>
+<section class = 'popup popup_delete'>
+    <div class= 'popup__content-delete popup__content'>
+        <h3 class = 'popup__title'>Вы уверены?</h3>
+        <button class = 'popup__close-button-delete popup__close-button' type='button'>
+            <img class='popup__button-pic link' src="<%=require('./images/CloseIcon.svg')%>" alt='кнопка'>
+        </button>
+        <form name='text' class='popup__list popup__list_delete' action='#' method="POST" novalidate>
+        <button class = 'popup__save-button popup__save-button_delete' type='submit'>Да</button>
+        </form>
+    </div>
+</section>
+<section class = 'popup popup_avatar'>
+    <div class= 'popup__content-avatar popup__content'>
+        <h3 class = 'popup__title'>Обновить аватар</h3>
+        <button class = 'popup__close-button-avatar popup__close-button' type='button'>
+            <img class='popup__button-pic link' src="<%=require('./images/CloseIcon.svg')%>" alt='кнопка'>
+        </button>
+        <form name='text' class='popup__list popup__list_avatar' action='#' method="POST" novalidate>
+            <input name='avatar' type='url' id='avatar' class='popup__info popup__info_avatar' placeholder="Ссылка на аватар" required>
+            <span class='popup__input-error' id='avatar-error'></span>
+        <button class = 'popup__save-button popup__save-button_avatar' type='submit'>Сохранить</button>
+        </form>
+    </div>
 </section>
 
     <footer class=footer>
