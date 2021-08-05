@@ -1,11 +1,13 @@
 .profile__avatar-container {
     position: relative;
     margin-right: 30px;
-    }
-    
-    @media (max-width: 600px) {
+}
+
+@media (max-width: 600px) {
     .profile__avatar-container {
-    margin-right: 0;
-    margin-bottom: 26px;
+        display: flex;
+        justify-content: center;
+        margin-right: 0;
+        margin-bottom: 26px;
     }
-    }
+}
