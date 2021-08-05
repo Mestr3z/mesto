@@ -1,3 +1,5 @@
+import escape from '../pages/index.js'
+
 export default class Popup {
   constructor(popupElement) {
     this._popupElement = popupElement;
@@ -21,7 +23,7 @@ export default class Popup {
   }
 
   _handleEscClose(event) {
-    if (event.key === "Escape") {
+    if (event.key === escape) {
       this.close();
     }
   }

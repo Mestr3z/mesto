@@ -30,7 +30,7 @@ api
     cardList.renderItems(cards);
   })
   .catch((error) => console.log(error));
-
+export default escape = "Escape"; 
 const popupDelete = document.querySelector(".popup_delete");
 const popupAvatar = document.querySelector(".popup_avatar");
 const jobInput = document.querySelector('input[name="job"]');
@@ -194,3 +194,4 @@ avatarButton.addEventListener("click", () => {
   popupWithAvatar.open();
   avatarEditFormValidator.hideErrors();
 });
+

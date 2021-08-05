@@ -44,7 +44,9 @@ export default class Card {
   }
 
   deleteCard() {
-    this._cardElement.closest(".cards__content").remove();
+    this._cardElement.remove();
+    this._cardName = '';
+    this._cardLink = '';
   }
 
   updateLikesCount(value) {

@@ -2,5 +2,8 @@
     width: 282px;
     object-fit: cover;
     border-radius: 10px 10px 0px 0px;
-    height: 282px;
+    min-height: 282px;
+    max-height: 282px;
+    z-index: 0;
 }
+
