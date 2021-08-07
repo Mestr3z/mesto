@@ -1,4 +1,4 @@
-import escape from '../pages/index.js'
+import escape from '../components/constants.js'
 
 export default class Popup {
   constructor(popupElement) {
