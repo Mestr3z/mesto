@@ -442,6 +442,7 @@ template {
     margin-top:18px;
     width: 18px;
     height:20px;
+    z-index: 1;
 }
 .cards__description {
     display: flex;
@@ -454,8 +455,11 @@ template {
     width: 282px;
     object-fit: cover;
     border-radius: 10px 10px 0px 0px;
-    height: 282px;
+    min-height: 282px;
+    max-height: 282px;
+    z-index: 0;
 }
+
 
 .cards__like-container {
     display: flex;
@@ -671,14 +675,16 @@ template {
 .profile__avatar-container {
     position: relative;
     margin-right: 30px;
-    }
-    
-    @media (max-width: 600px) {
+}
+
+@media (max-width: 600px) {
     .profile__avatar-container {
-    margin-right: 0;
-    margin-bottom: 26px;
+        display: flex;
+        justify-content: center;
+        margin-right: 0;
+        margin-bottom: 26px;
     }
-    }
+}
 .profile__button-avatar {
     padding: 0;
     position: absolute;
@@ -760,13 +766,9 @@ template {
 @media screen and (max-width:320px) {
     .profile__name {
         display: flex;
-        margin: 0 auto;
-        margin-right:10px;
-        margin-left:65px;
         max-width: 240px;
         font-size: 27px;
         line-height: 33px;
-        justify-content: center;
         align-items: center;
     }
 }
@@ -818,6 +820,7 @@ template {
     display:flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
 
 
@@ -838,6 +841,7 @@ template {
     overflow: hidden;
     align-items: center;
     justify-content: center;
+    z-index: 2;
    
 }
 .popup__pic{
