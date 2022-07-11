@@ -1,16 +1,16 @@
-# Место
+# Mesto
 
-### О проекте 
-Проект "Место" - интерактивная страница, куда можно добавлять фотографии, удалять их и ставить лайки.
+### About the project
+The Mesto project is an interactive page where you can add photos, delete them and put likes.
 
 
-#### Используемые технологии
+#### Technologies used
 - HTML
 - CSS
-- Структура файлов по БЭМ
-- Адаптивная верстка
-- Таблица Грид
+- BEM file structure
+- Adaptive layout
+- Grid Table
 - JavaScript
 
 
-[Сcылка на проект](https://mestr3z.github.io/mesto/)
+[Link to the project](https://mestr3z.github.io/mesto /)
