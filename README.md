@@ -13,4 +13,4 @@ The Mesto project is an interactive page where you can add photos, delete them a
 - JavaScript
 
 
-[Link to the project](https://mestr3z.github.io/mesto /)
+[Link to the project](https://mestr3z.github.io/mesto/)
